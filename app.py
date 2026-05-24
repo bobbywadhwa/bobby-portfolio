@@ -14,8 +14,8 @@ load_dotenv()
 
 def send_email(name, email, message):
 
-    sender_email = os.getenv("EMAIL_USER")
-    sender_password = os.getenv("EMAIL_PASS")
+    sender_email = st.secrets["EMAIL_USER"]
+    sender_password = st.secrets["EMAIL_PASS"]
     receiver_email = "bobbywadhwa1303@gmail.com"
 
     subject = f"Portfolio Contact from {name}"
